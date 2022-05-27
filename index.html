@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>COVID-19 STATS</title>
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+<a href="/map1.html" class="map">Map with Covid Cases</a>
+<a href="/map2.html" class="map">Map with P/C Ratio</a>
+<a href="/map3.html" class="map">Maharashtra Covid Map</a>
+<body onselectstart="return false" onselect="return false" oncopy="return false">
+  <h1>Corona virus statistics in India</h1>
+  <div class="latest"></div>
+  <div class="DescriptionBox">
+    <div class="table">
+      <table>
+        <tr class="tableHeader">
+          <th>Data</th>
+          <th class="tableConfirmed">Infected</th>
+          <th class="tableRecovered">Recoveries</th>
+          <th class="tableDead">Deaths</th>
+        </tr>
+       </table>
+      </div>
+      <div class="chart">
+        <canvas id="myChart" ></canvas>
+        </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

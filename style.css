@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0 30px;
+    color: white;
+    background-color: black;
+    font-size: 15px;
+}
+.latest
+{
+    display: grid;
+    width: 30vh;
+    height: 80vh;
+    grid-template-rows: 20px 1fr 1fr 1fr;
+    position: fixed;
+    left: 30px;
+}
+.date
+{
+    color: #00FF85;
+}
+.todayBox
+{
+    padding: 3vh;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    margin: 20px 0;
+}
+.todayInfo
+{
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: calc(100% + 2px);
+    height: 50%;
+    border-radius: 10px;
+    padding: 2.5vh;
+    color: black;
+    background-color: white;
+}
+.todayConfirmedBox
+{
+    border-color: #00B2FF;
+}
+.todayConfirmedInfo
+{
+    background-color: #00B2FF;
+    font-size: 20px;
+}
+.todayRecoveredBox
+{
+    border-color: #00FF85; 
+}
+.todayRecoveredInfo
+{
+    background-color: #00FF85;
+    font-size: 20px;
+}
+.todayDeadBox
+{
+    border-color: #FF003D;
+}
+.todayDeadInfo
+{
+    background-color: #FF003D;
+    font-size: 20px;
+}
+.DescriptionBox
+{
+    position: absolute;
+    left: calc(30vh + 50px);
+    text-align: center;
+}
+.DescriptionBox table
+{
+    margin: auto;
+    width: 70%;
+    position: relative;
+}
+.tableHeader
+{
+    font-weight: bold;
+}
+.tableConfirmed
+{
+    color: #00B2FF;
+}
+.tableDead
+{
+    color: #FF003D;
+}
+.tableRecovered
+{
+    color: #00FF85;
+}
+.table{
+    overflow-y: scroll;
+    height: 40vh;
+    width: 70vw;
+    margin-bottom: 37px;
+}
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.98); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.85); 
+  }  
+
+  /* Handle on active */
+  ::-webkit-scrollbar-thumb:active {
+    background: rgba(255, 255, 255, 0.78);
+  }  
+th,td{
+    padding:5px 0;
+}
+
+.tableHeader th
+{
+    position: sticky;
+    top: 0;
+    background-color: #722954;
+    box-shadow: inset 0 0 18px 7px black;
+}
+.chart{
+    width:50vw;
+	height:35vh;
+    margin: 0 auto;
+}
+  @media only screen and (max-width: 600px) {
+
+    .DescriptionBox
+    {
+        margin-top: 20px;
+        left: 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .DescriptionBox table{
+        width: unset;
+    }
+
+    .table{
+        height: 75vh;
+        width: 100vw;
+        margin: 0 auto;
+        overflow-y: unset;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .latest
+    {
+        position: unset;
+        margin-left: 54px;
+    }
+
+    th,td{
+        padding:5px 10px;
+      }
+
+	.chart{
+		height: 35vh;
+		width: 90vw;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 20px;
+	}
+
+    canvas {
+        display: block;
+        height: 234px;
+        width: 222px;
+  }
+    }
+.maps{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.map{
+    padding: 10px;
+}
