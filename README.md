@@ -71,7 +71,7 @@ git clone https://github.com/AnkittSharmaa/Covid-19-Status-Using-QGIS-Mapping.gi
 2. Go to the project directory
 
 ```bash
-cd YOUR-SPACE/Project\ Files
+cd Covid-19-Status-Using-QGIS-Mapping
 ```
 
 
