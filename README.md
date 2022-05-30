@@ -75,6 +75,8 @@ cd Covid-19-Status-Using-QGIS-Mapping
 ```
 
 
+## [HOSTED SITE LINK](https://ankittsharmaa.github.io/Covid-19-Status-Using-QGIS-Mapping/)
+
 
 ## [DRIVE LINK TO PROJECT FILES](https://drive.google.com/drive/folders/1aGY9vS9CXipKua8BYWrbeqBMAyuQn6bY?usp=sharing)
 ## [DRIVE LINK TO DATASET](https://drive.google.com/drive/folders/1MDRdrPMWZ8h3Inbb6xOeYylk4geWz6MA?usp=sharing)
